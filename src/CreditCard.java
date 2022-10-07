@@ -1,6 +1,9 @@
-import org.w3c.dom.ls.LSOutput;
+
 
 public class CreditCard {
+
+    private int account;
+    private double currentAmount;
 
     public CreditCard(int account, double currentAmount) {
         this.account = account;
@@ -10,9 +13,6 @@ public class CreditCard {
     }
 
     public CreditCard() {}
-
-    private int account;
-    private double currentAmount;
 
     public void addAmount (double addingAmount) {
         if (addingAmount > 0) {
